@@ -42,7 +42,7 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(board,index) == true
-    move(board_array,index,player="X")
+    puts move(board_array,index,player="X")
     puts display_board(board)
   elsif turn(board)
     true
